@@ -1,51 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Contact</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./_images/logo_transparent.png"
+    />
+    <title>Chill Vibes Chronicle | Contact</title>
+  </head>
 
-<body>
-
+  <body>
     <header>
+      <a href="./index.html">
+        <img
+          src="./_images/logo_transparent.png"
+          alt="Chill Vibes Chronicle Logo"
+          id="websiteLogo"
+        />
+      </a>
 
-        <img src="./_images/logo_transparent.png" alt="Chill Vibes Chronicle Logo" width="150px">
-      
-        <nav>
-
-            <ul>
-                <a href="/index.html" target="_blank" rel="noopener noreferrer"><li>Home</li></a>
-                <a href="/about_us.html" target="_blank" rel="noopener noreferrer"><li>About Us</li></a>
-                    <a href="/artists.html" target="_blank" rel="noopener noreferrer"><li>Artists</li></a>
-                        <a href="/playlist.html" target="_blank" rel="noopener noreferrer"><li>Playlist</li></a>
-                            <a href="/contact_us.html" target="_blank" rel="noopener noreferrer"><li>Contact Us</li><a
-            </ul>
-    
-        </nav>
-
-        <h1>Contact me</h1>
-        
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="./index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="navLink"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="./about_us.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="navLink"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="./artists.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="navLink"
+              >Artists</a
+            >
+          </li>
+          <li>
+            <a
+              href="./playlist.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="navLink"
+              >Playlist</a
+            >
+          </li>
+          <li>
+            <a
+              href="./contact_us.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="navLink"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
+    <div class="container">
+      <h1 class="contactMeTitle">Contact Me</h1>
+      <p class="contactMeTitle">
+        I would love to have <strong>your</strong> opinion on the blog
+      </p>
+      <main>
+        <div class="contactCard">
+          <label for="name">Fullname:</label>
+          <input type="text" name="name" id="" placeholder="Name" />
+          <br />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="" placeholder="Email" />
+          <br />
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id=""
+            placeholder="Enter your message here"
+            rows="10"
+            cols="50"
+          ></textarea>
+          <a href="mailto:ruvunangizakev@gmail.com">
+            <button class="sendBtn">Send</button>
+          </a>
+        </div>
+      </main>
+      <h1 class="contactMeTitle">Find Us Here</h1>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2389.9795254598403!2d-2.8762531999999994!3d53.2002834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487add5b6d99d2b5%3A0xcf7da83deef350b6!2sAtkinson%20Accounts%20-%20Chartered%20Accountants!5e0!3m2!1sen!2sza!4v1726576776806!5m2!1sen!2sza"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+         ></iframe>
+      </div>
+    </div>
 
-        <img src="/_images/Author_Avatar.jpeg" alt="Author Avatar" width="200px">
-         <p>You can contact me at this address</p>
-         <p>ruvunangizakev@gmail.com</p>
+   
 
-    </main>
-    
-    
+   
+
     <footer>
-        <p>&copy; 2024 Chill Vibes Chronicles. All rights reserved.
+      <div class="footerNav">
+        <h3>Main Menu</h3>
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="./index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="navLink"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about_us.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="navLink"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="./artists.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="navLink"
+                >Artists</a
+              >
+            </li>
+            <li>
+              <a
+                href="./playlist.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="navLink"
+                >Playlist</a
+              >
+            </li>
+            <li>
+              <a
+                href="./contact_us.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="navLink"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-            All content on this website, including text, images, graphics, logos, and audio, is the property of Chill Vibes Chronicles unless otherwise stated. Unauthorized use and/or duplication of this material without express and written permission from this site's author and/or owner is strictly prohibited.</p>
+      <div class="footerNav">
+        <h3>Legal Info</h3>
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="./legal_conditions.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="navLink"
+                >Legal Conditions</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footerNav">
+        <h3>Informations</h3>
+        <nav>
+          <ul>
+            <li>
+              <a href="mailto:ruvunangizakev@gmail.com"
+                >Email: ruvunangizakev@gmail.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+44 7563810862">Phone Contact: +44 7563810862</a>
+            </li>
+            <li>
+              <a
+                href="https://www.google.com/maps/place/Atkinson+Accounts+-+Chartered+Accountants/@53.2002834,-2.8788281,17z/data=!3m1!4b1!4m6!3m5!1s0x487add5b6d99d2b5:0xcf7da83deef350b6!8m2!3d53.2002834!4d-2.8762532!16s%2Fg%2F1tkqzt2w?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D"
+              >
+                Store Address: Atkinson Accounts - Chartered Accountants,<br />Egerton
+                House, Chester, CH2 3NJ, <br />United Kingdom
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
-    
-</body>
-</html> 
+  </body>
+</html>
