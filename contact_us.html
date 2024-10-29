@@ -87,22 +87,22 @@
       <main>
         <div class="contactCard">
           <label for="name">Fullname:</label>
-          <input type="text" name="name" id="" placeholder="Name" />
+          <input type="text" name="name" id="nameBox" placeholder="Name" />
           <br />
           <label for="email">Email:</label>
-          <input type="email" name="email" id="" placeholder="Email" />
+          <input type="email" name="email" id="emailBox" placeholder="Email" />
           <br />
           <label for="message">Message:</label>
           <textarea
             name="message"
-            id=""
+            id="msgBox"
             placeholder="Enter your message here"
             rows="10"
             cols="50"
           ></textarea>
-          <a href="mailto:ruvunangizakev@gmail.com">
-            <button class="sendBtn">Send</button>
-          </a>
+        
+            <button class="sendBtn" onclick="checkFields()">Send</button>
+         
         </div>
       </main>
       <h1 class="contactMeTitle">Find Us Here</h1>
@@ -219,4 +219,5 @@
       </div>
     </footer>
   </body>
+  <script src="/scripts/contact_us.js"></script>
 </html>

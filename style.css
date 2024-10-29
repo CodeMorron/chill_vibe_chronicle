@@ -550,6 +550,10 @@ textarea {
   .contactCard {
     width: 80%; /* Adjust contact card width */
   }
+
+  main{
+    overflow-x: hidden;
+  }
 }
 
 /* For smaller devices (phones) */
@@ -561,6 +565,7 @@ textarea {
     flex-direction: column; /* Stack header items */
 
     align-items: center;
+    
   }
 
   ul {
@@ -624,6 +629,10 @@ textarea {
 
   .aboutWys {
     width: 100%; /* Full width about section */
+    p{
+      font-size: 14px;
+      width: 400px;
+    }
   }
 
   .playLists {
@@ -640,4 +649,122 @@ textarea {
     flex-direction: column; /* Stack footer content */
     padding: 20px;
   }
+
+  main{
+    overflow-x: hidden;
+  }
+}
+
+
+/*MUSIC PLAYER*/
+/* Music Player Bar Styling */
+.musicPlayerBar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  transition: height 0.3s ease;
+  font-family: 'Poppins', Arial;
+}
+
+.collapsed {
+  height: 30px; /* Minimized height */
+}
+
+/* Hide the progress bar in collapsed state */
+.collapsed .progressBarContainer {
+  display: none; /* Hide the progress bar */
+}
+
+.collapseBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.collapseBtn img {
+  width: 24px;
+  height: 24px;
+}
+
+.musicControlBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.musicControlBtn img {
+  width: 24px;
+  height: 24px;
+}
+
+.trackInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.trackTitle {
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.trackArtist {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-right: 10px;
+}
+
+.trackImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: transform 0.5s linear;
+}
+
+/* Hide track info and controls in collapsed state */
+.collapsed .trackInfo,
+.collapsed .musicControlBtn {
+  display: none;
+}
+
+/* Spinning Animation */
+.spin {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.trackInfoTxt {
+  flex-direction: column;
+  display: flex;
+}
+
+.progressBarContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #555;
+}
+
+.progressBar {
+  height: 100%;
+  width: 0%;
+  background-color: #1db954;
+  transition: width 0.1s linear;
 }
