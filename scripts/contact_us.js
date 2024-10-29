@@ -22,6 +22,11 @@ function checkFields() {
 
         window.location.href = mailtoLink;
         alert('Thank you! Your message is being processed.');
+        
+        // Clear the fields
+        nameBox.value = '';
+        emailBox.value = '';
+        msgBox.value = '';
     } else {
         alert('All fields must be completed');
     }
