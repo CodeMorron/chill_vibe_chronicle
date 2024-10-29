@@ -507,6 +507,10 @@ textarea {
 
 /* For medium-sized devices (tablets) */
 @media only screen and (max-width: 1200px) {
+  main{
+    overflow-x:hidden ;
+  }
+  
   #websiteLogo {
     width: 80px; /* Adjust logo size for medium screens */
   }
@@ -550,6 +554,9 @@ textarea {
 
 /* For smaller devices (phones) */
 @media only screen and (max-width: 800px) {
+  main{
+    overflow-x:hidden ;
+  }
   header {
     flex-direction: column; /* Stack header items */
 
