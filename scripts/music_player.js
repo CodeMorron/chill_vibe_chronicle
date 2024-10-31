@@ -11,13 +11,13 @@ function playPause() {
     if (!isPlaying) {
         audioPlayer.play();
         albumCover.classList.add("spin");
-        playButton.src = "/_images/pause_button.png";
+        playButton.src = "./_images/pause_button.png";
         requestAnimationFrame(updateProgressBar);
         updateProgressBar();
     } else {
         audioPlayer.pause();
         albumCover.classList.remove("spin");
-        playButton.src = "/_images/play_button.png";
+        playButton.src = "./_images/play_button.png";
     }
     isPlaying = !isPlaying;
 }
@@ -29,10 +29,10 @@ function togglePlayer() {
 
     if (isCollapsed) {
         musicPlayer.classList.remove("collapsed");
-        collapseIcon.src = "/_images/collapse_icon.png"; // Icon for expanding
+        collapseIcon.src = "./_images/collapse_icon.png"; // Icon for expanding
     } else {
         musicPlayer.classList.add("collapsed");
-        collapseIcon.src = "/_images/expand_icon.png"; // Icon for collapsing
+        collapseIcon.src = "./_images/expand_icon.png"; // Icon for collapsing
     }
     isCollapsed = !isCollapsed;
 }
