@@ -12,6 +12,7 @@ function playPause() {
         audioPlayer.play();
         albumCover.classList.add("spin");
         playButton.src = "/_images/pause_button.png";
+        requestAnimationFrame(updateProgressBar);
         updateProgressBar();
     } else {
         audioPlayer.pause();
