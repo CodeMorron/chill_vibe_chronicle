@@ -810,12 +810,17 @@ textarea {
   align-items: center;
 }
 
+.modalOverlay.show {
+  display: flex; /* Show the modal overlay */
+}
+
 .modalContent {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   max-width: 700px;
   width: 90%;
+  position: relative;
 }
 
 /* Close button styling */
@@ -828,13 +833,37 @@ textarea {
   margin: 10px;
 }
 
-.envelopeSvg{
+.envelopeSvg {
   width: 40px;
   height: 40px;
-  
-  
 }
 
-.envelopeSvg > path{
+.envelopeSvg > path {
   fill: var(--nordWhite);
+}
+
+/* Google Form Container */
+.form-container {
+  position: relative;
+  padding-top: 100%; /* Adjust for height relative to width */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%; /* Full width */
+  margin: 0 auto; /* Center the container */
+}
+
+.form-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Fill the container */
+  border: none; /* No border */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) { /* Adjust based on your target screen size */
+  .form-container {
+    padding-top: 120%; /* Adjust height for smaller screens */
+  }
 }
